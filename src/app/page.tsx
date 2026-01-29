@@ -5,7 +5,7 @@ export default function Home() {
     <div className="min-h-screen font-sans bg-gray-50 text-brand-dark">
       {/* Header / Nav */}
       <header className="absolute top-0 w-full py-6 px-4 md:px-8 flex justify-between items-center z-10">
-        <div className="w-48 relative h-16">
+        <div className="w-64 relative h-24">
           <Image src="/ramadanwebinar/images/logo-v3.png" alt="De Fitnesscoach" fill className="object-contain object-left md:object-center" />
         </div>
       </header>
