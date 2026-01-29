@@ -30,12 +30,18 @@ export default function Home() {
             </div>
           </div>
           {/* Hero Image / Visual */}
-          <div className="flex-1 relative w-full h-[400px] md:h-[500px]">
-            {/* Using one of the uploaded images as a placeholder for the hero visual */}
-            <div className="w-full h-full bg-gradient-to-tr from-brand-cyan to-transparent opacity-20 absolute rounded-2xl"></div>
-            {/* Actual image placeholder */}
-            <div className="absolute inset-4 bg-gray-800 rounded-xl flex items-center justify-center text-gray-500">
-              Hero Visual / Coach Foto
+          {/* Hero Image / Visual */}
+          <div className="flex-1 w-full flex justify-center md:justify-end">
+            <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-brand-cyan/20">
+              <Image
+                src="/ramadanwebinar/images/coach-hero.jpg"
+                alt="De Fitnesscoach"
+                fill
+                className="object-cover object-top"
+                priority
+              />
+              {/* Gradient overlay for text readability if needed, or just style */}
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/50 to-transparent"></div>
             </div>
           </div>
         </div>
