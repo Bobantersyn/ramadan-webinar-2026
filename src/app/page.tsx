@@ -6,7 +6,7 @@ export default function Home() {
       {/* Header / Nav */}
       <header className="absolute top-0 w-full py-6 px-4 md:px-8 flex justify-between items-center z-10">
         <div className="w-48 relative h-16">
-          <Image src="/images/logo-v3.png" alt="De Fitnesscoach" fill className="object-contain object-left md:object-center" />
+          <Image src="/ramadanwebinar/images/logo-v3.png" alt="De Fitnesscoach" fill className="object-contain object-left md:object-center" />
         </div>
       </header>
 
@@ -74,7 +74,7 @@ export default function Home() {
           <div className="flex-1">
             <div className="book-container relative w-full h-[400px]">
               <div className="book w-[250px] h-[375px]">
-                <Image src="/images/ebook-cover.png" alt="Ramadan E-book" fill className="object-cover rounded-r-md" />
+                <Image src="/ramadanwebinar/images/ebook-cover.png" alt="Ramadan E-book" fill className="object-cover rounded-r-md" />
               </div>
             </div>
           </div>
