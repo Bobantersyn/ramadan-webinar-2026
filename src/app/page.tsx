@@ -13,7 +13,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 md:px-8 bg-brand-dark text-white overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="flex-1 space-y-6">
+          <div className="flex-1 space-y-6 text-center md:text-left">
             <div className="inline-block bg-brand-cyan/20 text-brand-cyan px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wider">
               Webinar • 10 Februari 2026 • 19:00 Uur
             </div>
