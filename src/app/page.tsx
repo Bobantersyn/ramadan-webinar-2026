@@ -115,22 +115,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold">Claim je plek voor 10 Februari</h2>
           <p className="text-gray-600">Vol = Vol (beperkt aantal plaatsen in de webinar room)</p>
 
-          <form className="space-y-4 text-left bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Jouw Naam</label>
-              <input type="text" id="name" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-cyan focus:border-brand-cyan outline-none transition-all" placeholder="Bijv. Karim" required />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">E-mailadres</label>
-              <input type="email" id="email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-cyan focus:border-brand-cyan outline-none transition-all" placeholder="jouw@email.nl" required />
-            </div>
-            <button type="submit" className="w-full bg-brand-cyan text-brand-dark font-bold text-lg py-4 rounded-lg hover:brightness-110 transition-all shadow-md mt-4">
-              Meld mij gratis aan
-            </button>
-            <p className="text-xs text-center text-gray-400 mt-4">
-              We sturen je de link en het e-book direct toe. Geen spam.
-            </p>
-          </form>
+          <SubscribeForm />
         </div>
       </section>
 
