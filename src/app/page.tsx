@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SubscribeForm from "../components/SubscribeForm";
 
 export default function Home() {
   return (
