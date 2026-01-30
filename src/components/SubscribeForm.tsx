@@ -59,7 +59,7 @@ export default function SubscribeForm() {
                 Claim je <span className="text-brand-cyan">Gratis Plek</span>
             </h3>
             <p className="text-center text-gray-400 mb-6 text-sm">
-                Vol = Vol. We starten stipt om 19:00 uur.
+                Vol = Vol. We starten om 19:00 uur.
             </p>
 
             <div>

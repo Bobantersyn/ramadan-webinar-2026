@@ -112,8 +112,7 @@ export default function Home() {
       {/* Registration Section */}
       <section id="register" className="py-20 px-4 md:px-8">
         <div className="max-w-xl mx-auto text-center space-y-8">
-          <h2 className="text-3xl font-bold">Claim je plek voor 10 Februari</h2>
-          <p className="text-gray-600">Vol = Vol (beperkt aantal plaatsen in de webinar room)</p>
+
 
           <SubscribeForm />
         </div>
