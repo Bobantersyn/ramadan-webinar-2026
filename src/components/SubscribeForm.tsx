@@ -71,7 +71,7 @@ export default function SubscribeForm() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Jouw voornaam"
-                    className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
+                    className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
                 />
             </div>
 
@@ -84,7 +84,7 @@ export default function SubscribeForm() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="jouw@email.com"
-                    className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-600 text-white placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
+                    className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
                 />
             </div>
 
