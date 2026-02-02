@@ -26,7 +26,10 @@ export async function POST(request: Request) {
         // User inputs
         formData.append('firstname', name);
         formData.append('email', email);
-        formData.append('phone', phone);
+
+        // Sanitize phone number: remove all non-numeric characters
+        const sanitizedPhone = phone.replace(/\D/g, '');
+        formData.append('phone', sanitizedPhone);
 
         // Send to ActiveCampaign
         const response = await fetch('https://defitnesscoach.activehosted.com/proc.php', {
