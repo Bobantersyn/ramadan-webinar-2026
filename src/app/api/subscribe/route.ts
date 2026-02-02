@@ -28,7 +28,18 @@ export async function POST(request: Request) {
         formData.append('email', email);
 
         // Sanitize phone number: remove all non-numeric characters
-        const sanitizedPhone = phone.replace(/\D/g, '');
+        let sanitizedPhone = phone.replace(/\D/g, '');
+
+        // Format to valid E.164 for Netherlands if possible
+        if (sanitizedPhone.startsWith('06') && sanitizedPhone.length === 10) {
+            sanitizedPhone = '+31' + sanitizedPhone.substring(1);
+        } else if (sanitizedPhone.startsWith('6') && sanitizedPhone.length === 9) {
+            sanitizedPhone = '+31' + sanitizedPhone;
+        } else if (!sanitizedPhone.startsWith('+')) {
+            // Ensure strict plus prefix if not present (AC often prefers this)
+            sanitizedPhone = '+' + sanitizedPhone;
+        }
+
         formData.append('phone', sanitizedPhone);
 
         // Send to ActiveCampaign
