@@ -65,41 +65,41 @@ export default function SubscribeForm() {
             </p>
 
             <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">Naam</label>
                 <input
                     type="text"
                     id="name"
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="Jouw voornaam"
+                    placeholder="Voornaam"
                     className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
                 />
             </div>
 
             <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">E-mailadres</label>
                 <input
                     type="email"
                     id="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="jouw@email.com"
+                    placeholder="Email"
                     className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
                 />
             </div>
 
-            <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">Telefoonnummer</label>
+            <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <span className="text-gray-500 mr-2">🇳🇱 +31</span>
+                </div>
                 <input
                     type="tel"
                     id="phone"
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="06 12345678"
-                    className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
+                    placeholder="6 12345678"
+                    className="w-full pl-20 px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
                 />
             </div>
 
