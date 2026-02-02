@@ -21,7 +21,7 @@ export async function POST(request: Request) {
         formData.append('m', '0');
         formData.append('act', 'sub');
         formData.append('v', '2');
-        formData.append('or', 'a3b5a43e-c5c3-48f0-b43a-e9adeb65a702');
+        formData.append('or', '142f678a-363b-4079-9719-9aecb09899ff');
 
         // User inputs
         formData.append('firstname', name);
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
 
         // Sanitize phone number: remove all non-numeric characters
         const sanitizedPhone = phone.replace(/\D/g, '');
-        // formData.append('phone', sanitizedPhone); // Temporarily disabled for debugging
+        formData.append('phone', sanitizedPhone);
 
         // Send to ActiveCampaign
         const response = await fetch('https://defitnesscoach.activehosted.com/proc.php', {
