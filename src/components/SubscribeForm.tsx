@@ -90,6 +90,19 @@ export default function SubscribeForm() {
                 />
             </div>
 
+            <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">Telefoonnummer</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="06 12345678"
+                    className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-brand-cyan focus:ring-1 focus:ring-brand-cyan transition-all"
+                />
+            </div>
+
             <button
                 type="submit"
                 disabled={status === 'loading'}
