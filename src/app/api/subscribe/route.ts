@@ -3,11 +3,11 @@ import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { name, email } = body;
+        const { name, email, phone } = body;
 
-        if (!name || !email) {
+        if (!name || !email || !phone) {
             return NextResponse.json(
-                { error: 'Name and email are required' },
+                { error: 'Name, email and phone are required' },
                 { status: 400 }
             );
         }
@@ -26,6 +26,7 @@ export async function POST(request: Request) {
         // User inputs
         formData.append('firstname', name);
         formData.append('email', email);
+        formData.append('phone', phone);
 
         // Send to ActiveCampaign
         const response = await fetch('https://defitnesscoach.activehosted.com/proc.php', {

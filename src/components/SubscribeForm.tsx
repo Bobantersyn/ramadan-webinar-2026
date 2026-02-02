@@ -5,6 +5,7 @@ import { useState } from 'react';
 export default function SubscribeForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = useState('');
 
@@ -17,7 +18,7 @@ export default function SubscribeForm() {
             const res = await fetch('/ramadanwebinar/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email }),
+                body: JSON.stringify({ name, email, phone }),
             });
 
             const data = await res.json();
@@ -26,6 +27,7 @@ export default function SubscribeForm() {
                 setStatus('success');
                 setName('');
                 setEmail('');
+                setPhone('');
             } else {
                 setStatus('error');
                 setErrorMessage(data.error || 'Er ging iets mis. Probeer het later opnieuw.');
