@@ -29,7 +29,7 @@ export async function POST(request: Request) {
 
         // Sanitize phone number: remove all non-numeric characters
         const sanitizedPhone = phone.replace(/\D/g, '');
-        formData.append('phone', sanitizedPhone);
+        // formData.append('phone', sanitizedPhone); // Temporarily disabled for debugging
 
         // Send to ActiveCampaign
         const response = await fetch('https://defitnesscoach.activehosted.com/proc.php', {
