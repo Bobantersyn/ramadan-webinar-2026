@@ -35,7 +35,7 @@ export default function Home() {
           <div className="flex-1 w-full flex justify-center md:justify-end">
             <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border-4 border-brand-cyan/20">
               <Image
-                src="/ramadanwebinar/images/coach-hero.jpg"
+                src="/ramadanwebinar/images/new-hero.png"
                 alt="De Fitnesscoach"
                 fill
                 className="object-cover object-top"
